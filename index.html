@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon for the webpage -->
+</head>
+
+<body>
+    <h1>TicTacToe</h1> <!-- Title of the game -->
+    <p>Welcome to TicTacToe! Click on a cell to make your move. The first player to get three in a row wins!</p> <!-- Game instructions -->
+    
+    <div class="table-container"> <!-- Container for the game table and winning line -->
+        <table> <!-- Game board -->
+            <tr>
+                <td id="1"></td> <!-- Cell 1 -->
+                <td id="2"></td> <!-- Cell 2 -->
+                <td id="3"></td> <!-- Cell 3 -->
+            </tr>
+            <tr>
+                <td id="4"></td> <!-- Cell 4 -->
+                <td id="5"></td> <!-- Cell 5 -->
+                <td id="6"></td> <!-- Cell 6 -->
+            </tr>
+            <tr>
+                <td id="7"></td> <!-- Cell 7 -->
+                <td id="8"></td> <!-- Cell 8 -->
+                <td id="9"></td> <!-- Cell 9 -->
+            </tr>
+        </table>
+        <div id="winning-line" class="winning-line" style="display: none;"></div> <!-- Line to indicate the winning combination -->
+    </div>
+    
+    <button id="resetButton">Reset</button> <!-- Button to reset the game -->
+    <p id="message"></p> <!-- Message area to display game status -->
+    
+    <script src="main.js"></script> <!-- Link to the JavaScript file -->
+</body>
+
+</html>
